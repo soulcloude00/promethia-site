@@ -177,3 +177,20 @@ details[open] summary::after{content:"–"}details p{margin:0;padding:0 18px 16p
 @media (max-width:1100px){.tiers{grid-template-columns:1fr 1fr}.tier.rec{transform:none}}
 @media (max-width:600px){.tiers{grid-template-columns:1fr;gap:30px}.tier .for{min-height:0}}
 .price small{font-weight:800;font-size:.95rem}
+.cmp-wrap{max-width:980px;margin:0 auto;overflow-x:auto;-webkit-overflow-scrolling:touch;background:#fff;border:var(--b);border-radius:var(--r);box-shadow:8px 8px 0 var(--navy)}
+.cmp{width:100%;border-collapse:separate;border-spacing:0;min-width:640px;font-size:.95rem}
+.cmp th,.cmp td{padding:11px 14px;border-bottom:2px solid #eadfce;text-align:center}
+.cmp tbody tr:last-child>*{border-bottom:0}
+.cmp tbody th{text-align:left;font-weight:700;background:#fff}
+.cmp thead th{background:var(--navy);color:#fff;font-family:"Lilita One";font-weight:400;font-size:1.1rem;line-height:1.2}
+.cmp thead th small{display:block;font-family:Nunito;font-weight:800;font-size:.75rem;color:var(--gold)}
+.cmp thead th.rec-col{background:var(--orange)}.cmp thead th.rec-col small{color:#fff}
+.cmp td:nth-child(3){background:#fff3e8}
+.cmp th:first-child{position:sticky;left:0;z-index:1;min-width:190px;border-right:2px solid var(--navy)}
+.cmp thead th:first-child{z-index:2;text-align:left}
+.cmp tbody tr:nth-child(even) th,.cmp tbody tr:nth-child(even) td:not(:nth-child(3)){background:#fffaf3}
+.cmp .y span[aria-hidden]{display:inline-grid;place-items:center;width:26px;height:26px;background:#3d9a40;color:#fff;font-weight:800;border:2px solid var(--navy);border-radius:3px;box-shadow:inset -3px -3px 0 rgba(0,0,0,.2)}
+.cmp .n{color:#9aa3b5;font-weight:800}.cmp .f{font-size:.8rem;font-weight:800;color:var(--navy2)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.swipe{display:none;text-align:center;font-size:.72rem;margin:12px 0 0;opacity:.7}
+@media (max-width:700px){.swipe{display:block}.cmp{font-size:.85rem}.cmp th:first-child{min-width:150px;max-width:160px}.cmp th,.cmp td{padding:9px 10px}}
