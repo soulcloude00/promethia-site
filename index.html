@@ -6,123 +6,176 @@
 <title>Promethia | Hands-on learning for curious kids, Bangalore</title>
 <meta name="description" content="Promethia is a hands-on, offline, school-partnered cohort learning program in Bangalore for Grades 5-12: making, entrepreneurship, AI, research and design.">
 <meta name="theme-color" content="#1a2a4f">
+<meta property="og:title" content="Promethia | Hands-on learning for curious kids">
+<meta property="og:description" content="Make, invent, research and present. In person, in Bangalore, with schools.">
+<meta property="og:image" content="assets/apple-touch-icon.png">
 <link rel="icon" href="assets/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Silkscreen&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
+<noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
 </head>
 <body>
-<header class="nav">
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav" id="nav">
   <a class="brand" href="#top"><img src="assets/logo-mark.webp" alt="Promethia torch-flame logo" width="40" height="40"><span>Promethia</span></a>
-  <nav aria-label="Main">
-    <a href="#what">About</a><a href="#domains">Domains</a><a href="#session">Sessions</a><a href="#parents">Parents</a><a href="#schools">Schools</a><a href="#portfolio">Portfolio</a>
+  <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span></span><span></span><span></span></button>
+  <nav id="menu" aria-label="Main">
+    <a href="#what">About</a><a href="#domains">Domains</a><a href="#day">A day</a><a href="#students">Students</a><a href="#parents">Parents</a><a href="#schools">Institutions</a><a href="#portfolio">Portfolio</a>
+    <a class="btn btn-sm" href="#contact">Get in touch</a>
   </nav>
-  <a class="btn btn-sm" href="#contact">Get in touch</a>
 </header>
 
-<main id="top">
-<section class="hero">
+<main id="main">
+<section class="hero" id="top" data-tip="Hi! I'm Promo. Scroll down and I'll guide you through Promethia.">
   <div class="hero-copy">
-    <span class="chip">Bangalore · In person · Grades 5–12</span>
+    <span class="chip px">Bangalore · In person · Grades 5–12</span>
     <h1>Build it. Try it. <span class="hl">Light it up.</span></h1>
     <p class="lead">Promethia is a hands-on learning program run with schools. Small cohorts meet twice a week to make, invent, research and present real things, one block at a time.</p>
     <div class="cta-row">
       <a class="btn" href="#schools">Partner with us</a>
-      <a class="btn btn-ghost" href="#session">How a session works</a>
+      <a class="btn btn-ghost" href="#day">See a session</a>
     </div>
+    <ul class="mini-badges" aria-label="Highlights">
+      <li>🧱 Hands-on</li><li>📵 Offline</li><li>🏫 With schools</li>
+    </ul>
   </div>
   <div class="hero-art" id="heroArt" aria-hidden="true">
     <div class="fallback">
-      <div class="iso"><i></i><i></i><i></i><i></i><i></i><i></i></div>
-      <img src="assets/promo.webp" alt="" width="317" height="320" class="promo-float" fetchpriority="high">
+      <div class="iso"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="iso-torch"></div>
     </div>
     <canvas id="voxel"></canvas>
-    <div class="bubble">Hi, I'm Promo! I won't give you the answer, but I'll help you find it.</div>
   </div>
+  <a class="scroll-hint" href="#what" aria-label="Scroll to learn more"><span></span></a>
 </section>
 
-<section id="what" class="section">
+<section id="what" class="section" data-tip="Everything here is done with your hands, in a real room, with real friends.">
   <div class="wrap two">
-    <div>
-      <h2 class="h-block">What is Promethia?</h2>
-      <p>An offline, school-partnered cohort program where students learn by doing. No screens-first lectures: kids work with their hands, in teams, on projects they care about.</p>
-      <p>We start with Grades 5–12 in Bangalore and plan to grow to every grade. Across every domain, students practise <b>design thinking</b>, <b>public speaking</b> and show their work at <b>demo days</b>.</p>
+    <div class="reveal">
+      <p class="eyebrow px">What is Promethia?</p>
+      <h2>Learning you can pick up, build and show off.</h2>
+      <p>An offline, school-partnered cohort program where students learn by doing. Kids work with their hands, in teams, on projects they care about, guided by mentors.</p>
+      <p>We start with Grades 5–12 in Bangalore and plan to grow to every grade. In every domain, students practise <b>design thinking</b>, <b>public speaking</b> and present at <b>demo days</b>.</p>
     </div>
     <ul class="facts">
-      <li><b>2×</b><span>sessions a week, in person</span></li>
-      <li><b>5</b><span>core domains to explore</span></li>
-      <li><b>100%</b><span>hands-on, offline learning</span></li>
+      <li class="reveal"><b class="px">2×</b><span>Sessions every week, in person</span></li>
+      <li class="reveal"><b class="px">5</b><span>Core domains to explore</span></li>
+      <li class="reveal"><b class="px ico">✋</b><span>Hands-on, offline learning</span></li>
     </ul>
   </div>
 </section>
 
-<section id="domains" class="section alt">
+<section id="domains" class="section alt" data-tip="Tap a card to flip it and see what you could build!">
   <div class="wrap">
-    <h2 class="h-block center">Five domains. Endless builds.</h2>
+    <div class="head reveal"><p class="eyebrow px">Five domains</p><h2>Pick a block. Start building.</h2><p class="sub">Tap or hover a card to see example projects.</p></div>
     <div class="cards">
-      <article class="card c1"><div class="cube" aria-hidden="true">🛠️</div><h3>Making &amp; Engineering</h3><p>Build circuits, machines and prototypes. Break things, fix them, make them better.</p></article>
-      <article class="card c2"><div class="cube" aria-hidden="true">🚀</div><h3>Entrepreneurship &amp; Startups</h3><p>Spot a problem, pitch an idea, test it with real people and run a tiny venture.</p></article>
-      <article class="card c3"><div class="cube" aria-hidden="true">🤖</div><h3>AI &amp; Applied Tech</h3><p>Understand how AI works, use it responsibly and build simple smart tools.</p></article>
-      <article class="card c4"><div class="cube" aria-hidden="true">🔬</div><h3>Research &amp; Portfolio Projects</h3><p>Ask good questions, gather evidence and turn curiosity into a project to be proud of.</p></article>
-      <article class="card c5"><div class="cube" aria-hidden="true">🎨</div><h3>Design &amp; Creative Media</h3><p>Sketch, design, film and tell stories that make ideas clear and memorable.</p></article>
-      <article class="card c6"><div class="cube" aria-hidden="true">🎤</div><h3>Across all five</h3><p>Design thinking, public speaking and demo days where students present to an audience.</p></article>
+      <button class="card c1 reveal" aria-pressed="false"><span class="inner">
+        <span class="face front"><span class="vox v-gear" aria-hidden="true"></span><span class="ct">Making &amp; Engineering</span><span class="cd">Build, break, fix, improve.</span><span class="flip-hint px">Flip ↻</span></span>
+        <span class="face back"><span class="ct">You might build…</span><span class="ul"><span>A cardboard bridge that holds a load</span><span>A simple motorised car</span><span>A working circuit night-light</span></span></span>
+      </span></button>
+      <button class="card c2 reveal" aria-pressed="false"><span class="inner">
+        <span class="face front"><span class="vox v-rocket" aria-hidden="true"></span><span class="ct">Entrepreneurship &amp; Startups</span><span class="cd">Spot a problem, pitch a fix.</span><span class="flip-hint px">Flip ↻</span></span>
+        <span class="face back"><span class="ct">You might build…</span><span class="ul"><span>A one-page business idea</span><span>A 60-second pitch</span><span>A mini stall with real customers</span></span></span>
+      </span></button>
+      <button class="card c3 reveal" aria-pressed="false"><span class="inner">
+        <span class="face front"><span class="vox v-bot" aria-hidden="true"></span><span class="ct">AI &amp; Applied Tech</span><span class="cd">Understand it, use it well.</span><span class="flip-hint px">Flip ↻</span></span>
+        <span class="face back"><span class="ct">You might build…</span><span class="ul"><span>A tiny image-sorting model</span><span>A chatbot for your class</span><span>A "spot the AI" challenge</span></span></span>
+      </span></button>
+      <button class="card c4 reveal" aria-pressed="false"><span class="inner">
+        <span class="face front"><span class="vox v-lens" aria-hidden="true"></span><span class="ct">Research &amp; Portfolio Projects</span><span class="cd">Ask big questions, find evidence.</span><span class="flip-hint px">Flip ↻</span></span>
+        <span class="face back"><span class="ct">You might build…</span><span class="ul"><span>A neighbourhood survey</span><span>A science fair investigation</span><span>A research poster</span></span></span>
+      </span></button>
+      <button class="card c5 reveal" aria-pressed="false"><span class="inner">
+        <span class="face front"><span class="vox v-brush" aria-hidden="true"></span><span class="ct">Design &amp; Creative Media</span><span class="cd">Sketch, film, tell stories.</span><span class="flip-hint px">Flip ↻</span></span>
+        <span class="face back"><span class="ct">You might build…</span><span class="ul"><span>A comic strip or storyboard</span><span>A short stop-motion film</span><span>A poster for your own product</span></span></span>
+      </span></button>
+      <button class="card c6 reveal" aria-pressed="false"><span class="inner">
+        <span class="face front"><span class="vox v-mic" aria-hidden="true"></span><span class="ct">Across all five</span><span class="cd">Think, speak, show.</span><span class="flip-hint px">Flip ↻</span></span>
+        <span class="face back"><span class="ct">In every domain</span><span class="ul"><span>Design thinking</span><span>Public speaking</span><span>Demo days for families</span></span></span>
+      </span></button>
     </div>
   </div>
 </section>
 
-<section id="session" class="section">
+<section id="day" class="section" data-tip="Every session has the same rhythm: explain, play, reflect.">
   <div class="wrap">
-    <h2 class="h-block center">How a session works</h2>
-    <p class="center sub">Every session follows the same simple rhythm, so kids know what to expect and can focus on the fun part.</p>
-    <ol class="steps">
-      <li><span class="num">1</span><h3>Explain</h3><p class="t">5 min</p><p>A mentor introduces one skill with a real example.</p></li>
-      <li><span class="num">2</span><h3>Play</h3><p class="t">Most of the session</p><p>Students learn it through games, challenges and team builds.</p></li>
-      <li><span class="num">3</span><h3>Reflect</h3><p class="t">5 min</p><p>Everyone shares what they learned and what they'd try next.</p></li>
+    <div class="head reveal"><p class="eyebrow px">A day at Promethia</p><h2>How a session works</h2><p class="sub">Twice a week, every session follows a simple rhythm, so kids know what to expect and can focus on the fun part.</p></div>
+    <ol class="timeline">
+      <li class="reveal"><span class="blk b1 px">1</span><div><h3>Arrive &amp; team up</h3><p>Students join their cohort and grab their project kit.</p></div></li>
+      <li class="reveal"><span class="blk b2 px">2</span><div><h3>Explain <em class="px">5 min</em></h3><p>A mentor introduces one skill with a real example.</p></div></li>
+      <li class="reveal big"><span class="blk b3 px">3</span><div><h3>Play &amp; build <em class="px">most of it</em></h3><p>Students learn the skill through games, challenges and team builds. Promo nudges with questions, never answers.</p></div></li>
+      <li class="reveal"><span class="blk b4 px">4</span><div><h3>Reflect <em class="px">5 min</em></h3><p>Everyone shares what they learned and what they'd try next.</p></div></li>
+      <li class="reveal"><span class="blk b5 px">★</span><div><h3>Demo day (every so often)</h3><p>Students present their work to families and friends.</p></div></li>
     </ol>
   </div>
 </section>
 
-<section id="parents" class="section alt">
-  <div class="wrap two">
-    <div>
-      <h2 class="h-block">For parents</h2>
-      <p>Your child builds confidence by making real things and talking about them. You'll always know what they're learning.</p>
-      <ul class="ticks">
-        <li>Small, mentored cohorts in a safe, in-person setting</li>
-        <li>Skills that last: problem solving, teamwork, communication</li>
-        <li>A private portfolio showing your child's progress</li>
-        <li>Promo, our flame guide, encourages kids to think, never hands over answers</li>
-      </ul>
-    </div>
-    <div class="promo-card"><img src="assets/promo.webp" alt="Promo, the Promethia torch-flame mascot, waving" width="317" height="320" loading="lazy"><p>“What do you think happens if we try it another way?”</p></div>
-  </div>
-</section>
-
-<section id="schools" class="section">
-  <div class="wrap two">
-    <div>
-      <h2 class="h-block">For schools</h2>
-      <p>We partner with schools to run Promethia cohorts on campus or nearby. We bring the curriculum, mentors and materials; you bring curious students.</p>
-      <ul class="ticks">
-        <li>Structured twice-weekly program that fits your timetable</li>
-        <li>Project work that complements classroom learning</li>
-        <li>Demo days your whole community can attend</li>
-        <li>Clear progress reporting for students and parents</li>
-      </ul>
-      <a class="btn" href="mailto:founder@promethia.live?subject=Partnering%20with%20Promethia">Partner with us</a>
-    </div>
-    <div class="block-stack" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-  </div>
-</section>
-
-<section id="portfolio" class="section alt">
+<section id="for" class="section alt" data-tip="Pick who you are: student, parent or institution.">
   <div class="wrap">
-    <h2 class="h-block center">The Portfolio</h2>
-    <p class="center sub">Parents can view their child's portfolio any time: session recordings, strengths, interests, what they can achieve and how they can get better.</p>
-    <div class="pf" role="img" aria-label="Sample portfolio preview with made-up data">
-      <div class="pf-tag">SAMPLE · illustrative data, not a real student</div>
-      <div class="pf-head"><div class="avatar" aria-hidden="true">A</div><div><b>Sample Student</b><span>Grade 7 · Sample cohort</span></div></div>
+    <div class="head reveal"><p class="eyebrow px">Who it's for</p><h2>Made for students, parents and institutions</h2></div>
+    <div class="tabs reveal" role="tablist" aria-label="Audience">
+      <button role="tab" id="t-students" aria-controls="students" aria-selected="true">🧒 Students</button>
+      <button role="tab" id="t-parents" aria-controls="parents" aria-selected="false" tabindex="-1">👪 Parents</button>
+      <button role="tab" id="t-schools" aria-controls="schools" aria-selected="false" tabindex="-1">🏫 Institutions</button>
+    </div>
+
+    <div class="panel" role="tabpanel" id="students" aria-labelledby="t-students">
+      <div class="pgrid">
+        <div class="pbox"><h3>🛠️ What you'll do &amp; build</h3><ul class="ticks"><li>Real projects across five domains: gadgets, pitches, research, designs and films</li><li>Team challenges where everyone has a job</li><li>Your own ideas, tested and improved</li></ul></div>
+        <div class="pbox"><h3>🧠 Skills you'll gain</h3><ul class="ticks"><li>Design thinking: understand a problem, then try, test, improve</li><li>Public speaking: explain your ideas with confidence</li><li>Teamwork, curiosity and not giving up</li></ul></div>
+        <div class="pbox"><h3>🎮 How sessions feel</h3><ul class="ticks"><li>Short explanation, then games and building</li><li>Promo asks questions so <em>you</em> figure it out</li><li>Demo days where you show what you made</li></ul></div>
+        <div class="pbox"><h3>🎒 What you take home</h3><ul class="ticks"><li>A portfolio of everything you built</li><li>Confidence to try new things</li><li>Ideas you can keep working on</li></ul></div>
+      </div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="parents" aria-labelledby="t-parents" hidden>
+      <div class="two">
+        <div>
+          <div class="pgrid g1">
+            <div class="pbox"><h3>📚 What your child learns</h3><p>Making, entrepreneurship, AI, research and design, plus design thinking and public speaking in every domain. Each skill is explained with an example, practised through games and reflected on.</p></div>
+            <div class="pbox"><h3>🛡️ Safety &amp; supervision</h3><p>Sessions are in person, in small cohorts, with trainers present throughout. Tools and materials are chosen to suit each age group.</p></div>
+            <div class="pbox"><h3>📈 Progress &amp; the Portfolio</h3><p>Follow your child's journey through session recordings, what they're good at, their interests, what they can achieve and how they can get better.</p></div>
+            <div class="pbox"><h3>📵 Screen-time balance</h3><p>Promethia is offline-first. Learning happens with hands, materials and people; screens appear only when a project truly needs them.</p></div>
+          </div>
+        </div>
+        <div class="promo-card"><img src="assets/promo.webp" alt="Promo, the Promethia torch-flame mascot, waving" width="317" height="320" loading="lazy"><p>“What do you think happens if we try it another way?”</p><small>Promo encourages, never gives answers.</small></div>
+      </div>
+      <div class="faq">
+        <h3 class="faq-title">Parent FAQ</h3>
+        <details><summary>Is it safe?</summary><p>Yes. Sessions are in person with trainers present the whole time, and run in partnership with schools.</p></details>
+        <details><summary>Is it really offline?</summary><p>Yes. Kids learn with their hands and with each other. Screens are used only when a project needs them, for example to understand how AI works.</p></details>
+        <details><summary>What will my child actually build?</summary><p>Prototypes, pitches, research projects, designs and short films, presented at demo days.</p></details>
+        <details><summary>Which grades can join?</summary><p>Right now Grades 5–12 in Bangalore. We plan to open to all grades over time.</p></details>
+        <details><summary>How often are sessions?</summary><p>Twice a week, in person.</p></details>
+      </div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="schools" aria-labelledby="t-schools" hidden>
+      <div class="why">
+        <div><span class="vox v-gear" aria-hidden="true"></span><h3>Why partner</h3><p>Give students hands-on, project-based learning that complements the classroom, without extra load on your teachers.</p></div>
+        <div><span class="vox v-cal" aria-hidden="true"></span><h3>How it runs</h3><p>Twice-weekly sessions on campus, at times your school grants, led by our trainers with our curriculum and materials.</p></div>
+        <div><span class="vox v-mic" aria-hidden="true"></span><h3>What you get</h3><p>Student showcases, demo days for your community, and progress reports for every student.</p></div>
+        <div><span class="vox v-lens" aria-hidden="true"></span><h3>Who it suits</h3><p>Grades 5–12 today, with plans to support every grade.</p></div>
+      </div>
+      <h3 class="how-title">Partnering in 3 steps</h3>
+      <ol class="how">
+        <li><span class="blk b1 px">1</span><h4>Talk</h4><p>Tell us about your students, grades and goals.</p></li>
+        <li><span class="blk b3 px">2</span><h4>Plan</h4><p>We agree cohorts, session times and domains together.</p></li>
+        <li><span class="blk b4 px">3</span><h4>Launch</h4><p>Our trainers start sessions, with reports and demo days along the way.</p></li>
+      </ol>
+      <p class="center"><a class="btn btn-big" href="mailto:founder@promethia.live?subject=Partnering%20with%20Promethia">Email founder@promethia.live</a></p>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio" class="section" data-tip="This is a sample portfolio. Real ones are private to each family.">
+  <div class="wrap">
+    <div class="head reveal"><p class="eyebrow px">The Portfolio</p><h2>See your child grow</h2><p class="sub">Parents can view their child's portfolio any time: session recordings, strengths, interests, what they can achieve and how they can get better.</p></div>
+    <div class="pf reveal" role="group" aria-label="Sample portfolio preview with made-up data">
+      <div class="pf-tag px">Sample · not a real student</div>
+      <div class="pf-head"><div class="avatar" aria-hidden="true">S</div><div><b>Sample Student</b><span>Grade 7 · Sample cohort</span></div></div>
       <div class="pf-grid">
         <div class="pf-box"><h4>🎬 Session recordings</h4><div class="vids"><span>▶ Sample: Bridge build</span><span>▶ Sample: Pitch practice</span></div></div>
         <div class="pf-box"><h4>💪 Good at</h4><div class="bar"><span style="--w:80%">Building</span></div><div class="bar"><span style="--w:65%">Teamwork</span></div><div class="bar"><span style="--w:50%">Speaking</span></div></div>
@@ -134,9 +187,9 @@
   </div>
 </section>
 
-<section id="contact" class="section contact">
-  <div class="wrap center">
-    <img src="assets/logo-mark.webp" alt="" width="64" height="64" loading="lazy">
+<section id="contact" class="section contact" data-tip="Say hello! We'd love to hear from you.">
+  <div class="wrap center reveal">
+    <img src="assets/logo-mark.webp" alt="" width="72" height="72" loading="lazy">
     <h2>Let's build something together</h2>
     <p>Parents, schools and curious kids: we'd love to hear from you.</p>
     <a class="btn btn-big" href="mailto:founder@promethia.live">founder@promethia.live</a>
@@ -144,13 +197,19 @@
 </section>
 </main>
 
+<aside class="guide" id="guide" aria-live="polite">
+  <div class="guide-bubble" id="guideTip">Hi! I'm Promo. Scroll down and I'll guide you through Promethia.</div>
+  <button class="guide-btn" id="guideBtn" aria-label="Hide Promo's tips" aria-pressed="true"><img src="assets/promo.webp" alt="" width="317" height="320"></button>
+</aside>
+
 <footer class="foot">
   <div class="wrap foot-in">
-    <a class="brand" href="#top"><img src="assets/logo-mark.webp" alt="" width="32" height="32"><span>Promethia</span></a>
+    <a class="brand" href="#top"><img src="assets/logo-mark.webp" alt="" width="32" height="32" loading="lazy"><span>Promethia</span></a>
     <p>Hands-on learning for curious kids · Bangalore, India</p>
-    <p>© 2026 Promethia</p>
+    <p>© 2026 Promethia · <a href="mailto:founder@promethia.live">founder@promethia.live</a></p>
   </div>
 </footer>
+<script src="assets/ui.js" defer></script>
 <script type="module" src="assets/voxel.js"></script>
 </body>
 </html>
